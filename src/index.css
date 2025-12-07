@@ -1,8 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-* {
+@theme {
+  --color-accent: rgb(121, 30, 148);
+  --color-textMain: rgb(15, 15, 15);
+  --color-textAlt: rgb(251, 251, 251);
+}
+
+html,
+body {
   padding: 0;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(251, 251, 251);
+  color: rgb(15, 15, 15);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
