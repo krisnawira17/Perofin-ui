@@ -9,7 +9,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { ArrowRightLeft, icons, LayoutDashboard } from "lucide-react";
+import { ArrowRightLeft, LayoutDashboard } from "lucide-react";
 
 export function AppSidebar() {
   const items = [
