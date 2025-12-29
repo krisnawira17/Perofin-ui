@@ -3,6 +3,7 @@
 
 @theme {
   --color-accent: rgb(121, 30, 148);
+  --color-accent-select: rgba(121, 30, 148, 0.25);
   --color-textMain: rgb(15, 15, 15);
   --color-textAlt: rgb(251, 251, 251);
 }
