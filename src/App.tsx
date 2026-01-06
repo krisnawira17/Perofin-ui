@@ -1,17 +1,16 @@
+import { Routes, Route } from "react-router";
 import "./App.css";
-import Layout from "./components/layout";
+import Layout from "./components/MainLayout";
+import Dashboard from "./pages/Dashboard";
+import Transaction from "./pages/Transaction";
 
 function App() {
   return (
-    // <div className="flex flex-row gap-2">
-    //   <div id="dashboard-content" className="flex-1">
-    //     Content
-    //   </div>
-    // </div>
     <Layout>
-      <div id="dashboard-content" className="flex-1">
-        Content
-      </div>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/transactions" element={<Transaction />} />
+      </Routes>
     </Layout>
   );
 }

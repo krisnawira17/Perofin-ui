@@ -10,17 +10,18 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { ArrowRightLeft, LayoutDashboard } from "lucide-react";
+import { NavLink } from "react-router";
 
 export function AppSidebar() {
-  const items = [
+  const routes = [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/",
       icon: LayoutDashboard,
     },
     {
       title: "Transactions",
-      url: "#",
+      url: "/transactions",
       icon: ArrowRightLeft,
     },
   ];
@@ -37,13 +38,13 @@ export function AppSidebar() {
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
+              {routes.map((route) => (
+                <SidebarMenuItem key={route.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
-                      <item.icon />
-                      <span className="text-[1rem] ">{item.title}</span>
-                    </a>
+                    <NavLink to={route.url}>
+                      <route.icon />
+                      <span className="text-[1rem] ">{route.title}</span>
+                    </NavLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
